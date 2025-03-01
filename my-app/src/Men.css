@@ -1,0 +1,570 @@
+/* Carousel Styling */
+.body-container{
+  margin-top: 70px;
+
+}
+/* Women's Collection Styling */
+.collection-content {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  z-index: 1;
+  padding: 10px;
+  top:0;
+  height: auto;
+}
+
+.category-section{
+
+}
+.collection-content h2 {
+  font-size: 4.5rem;
+  margin-bottom: 0px;
+  margin-top: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  
+  letter-spacing: 5px;
+  color: black;
+}
+
+.collection-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 70px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  flex: 1 1 22%;
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* For hover effect */
+}
+
+.collection-item img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 7px;
+}
+
+.normal-img {
+  opacity: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+
+
+
+.collection-item:hover .normal-img {
+  opacity: 0;
+}
+
+.collection-item:hover .hover-img {
+  opacity: 1;
+}
+
+.collection-item h3 {
+  font-size: 1.2rem;
+  margin: 3px 0;
+}
+
+.collection-item p {
+  font-size: 1rem;
+  color: red;
+  margin-bottom: 15px;
+}
+
+.add-to-cart {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  text-decoration: none;
+  padding: 10px 20px;
+ 
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.add-to-cart:hover {
+  background-color: black;
+  color: white;
+  transition: background-color 0.5s;
+}
+
+
+
+
+.view-all {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 20px 100px; /* Adjusted padding for better look */
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(90deg, black, black); /* Gradient background */
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px; /* Rounded corners */
+  transition: all 0.5s ease; /* Smooth transition */
+  position: relative;
+  overflow: hidden;
+}
+
+.view-all::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 30%;
+  height: 100%;
+  background: white; /* White shine effect */
+  transition: left 0.5s ease;
+}
+
+.view-all:hover::before {
+  left: 100%; /* Shine animation effect */
+}
+
+.view-all:hover {
+  background: linear-gradient(360deg, black, black); /* Darker gradient on hover */
+  transform: scale(1.05); /* Slightly grow the button */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* More prominent shadow */
+}
+
+/* Ripple effect on click */
+.view-all:active::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(0, 0, 0, 0.3);
+  transform: translate(-50%, -20%) scale(0);
+  border-radius: 50%;
+  animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}
+
+.view-all:hover {
+  background-color: white; /* Color change on hover */
+  color: white;
+  box-shadow: 0px 8px 20px black; /* Deep shadow effect */
+  transform: scale(1.08); /* Slight growth on hover */
+  transition: all 0.5s ease;
+}
+@media (max-width: 1025px) {}
+
+
+
+
+
+
+
+
+
+@media (max-width: 925px) {
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+@media (max-width: 890px) {
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 0.8rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 1rem;
+    margin: 3px 0;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+
+}
+@media (max-width: 795px) {
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 8px 9px;
+    font-size: 0.7rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 0.9rem;
+    margin: 3px 0;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+    padding: 10px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 795px) {
+
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 8px 8px;
+    font-size: 0.5rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 0.9rem;
+    margin: 3px 0;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 3rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  
+.collection-grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  padding: 10px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  flex: 1 1 22%;
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* For hover effect */
+}
+
+}
+@media (max-width: 590px) {
+
+
+
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-size: 0.5rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 0.8rem;
+    
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  
+.collection-grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  padding: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  flex: 1 1 22%;
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* For hover effect */
+}
+
+}
+@media (max-width: 536px) {
+
+
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-size: 0.5rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 0.7rem;
+    
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  
+.collection-grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  padding: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  flex: 1 1 22%;
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* For hover effect */
+}
+
+}
+@media (max-width: 485px) {
+
+  .add-to-cart {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px 8px;
+    font-size: 0.5rem;
+
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  .collection-item h3 {
+    font-size: 0.6rem;
+    
+  }
+  .collection-item p {
+    font-size: 0.8rem;
+    color: red;
+    margin-bottom: 5px;
+  }
+  
+  .add-to-cart:hover {
+    background-color: black;
+    color: white;
+    transition: background-color 0.5s;
+  }
+  .collection-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: black;
+  }
+  .collection-grid {
+    display: flex;
+    justify-content: center;
+    gap: 9px;
+    margin-bottom: 2px;
+    flex-wrap: wrap;
+  }
+  
+.collection-grid {
+  display: flex;
+  justify-content: center;
+  gap: 0px;
+  padding: 8px;
+  margin-bottom: 2px;
+  flex-wrap: wrap;
+}
+
+.collection-item {
+  flex: 1 1 22%;
+  margin-bottom: 10px;
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+  position: relative; /* For hover effect */
+}
+
+
+}

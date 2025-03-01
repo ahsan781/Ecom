@@ -1,0 +1,323 @@
+/* Global Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* Buy Now Container */
+.buy-now-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  margin-top: 70px;
+  background-color: #fff;
+  gap: 20px; /* Add gap between left and right columns */
+}
+
+/* Left Section: Delivery/Contact Form */
+.buy-now-left {
+  width: 60%;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.buy-now-left h2 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.buy-now-left input,
+.buy-now-left select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.checkbox-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.checkbox-container span {
+  font-size: 0.9rem;
+}
+
+.email-checkbox {
+  transform: scale(1.2); /* Makes the checkbox a bit bigger */
+}
+
+.buy-now-left .save-info {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  font-size:1.3rem;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.buy-now-left .save-info:hover {
+  background-color: #555;
+}
+
+/* Shipping Method Section */
+.shipping-method-section {
+  margin-top: 30px;
+}
+
+.shipping-method-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.shipping-method-section label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.shipping-price {
+  font-weight: bold;
+  color: green;
+}
+
+/* Payment Method Section */
+.payment-method-section {
+  margin-top: 30px;
+}
+
+.payment-method-section h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.payment-method-section label {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1.1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.payment-fee {
+  font-weight: bold;
+  color: green;
+}
+
+/* Right Section: Product Summary */
+.buy-now-right {
+  width: 35%;
+  padding: 20px;
+  background-color: #fdfdfd;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  text-align: left;
+  position: sticky; /* This ensures the section sticks */
+  top: 20px; /* Sticks 20px from the top of the viewport */
+  align-self: flex-start; /* Prevent it from growing with the container */
+}
+
+.buy-now-right img {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.buy-now-right h3 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.product-summary {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.total-section {
+  margin-top: 20px;
+}
+
+.total-section p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.total-price {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #e63946;
+}
+
+.buy-now-right button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.buy-now-right button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .buy-now-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+  }
+
+  .buy-now-left {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .buy-now-right {
+    width: 100%;
+  }
+
+  .buy-now-right img {
+    max-width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .buy-now-container {
+    padding: 10px;
+  }
+
+  .buy-now-left h2,
+  .buy-now-right h3 {
+    font-size: 1.4rem;
+  }
+
+  .buy-now-left input,
+  .buy-now-left select {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+
+  .buy-now-right button {
+    padding: 10px 20px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .buy-now-container {
+    padding: 5px;
+  }
+  .buy-now-left .save-info {
+    background-color: black;
+    color: white;
+    padding: 10px;
+
+  }
+
+  .buy-now-left h2,
+  .buy-now-right h3 {
+    font-size: 1.2rem;
+  }
+
+  .buy-now-left input,
+  .buy-now-left select {
+    padding: 8px;
+    font-size: 0.8rem;
+  }
+
+  .buy-now-right button {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 520px) {
+
+  .buy-now-left .save-info {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-left .save-info:hover {
+    background-color: #555;
+  }
+
+}
+@media (max-width: 386px) {
+
+  .buy-now-left .save-info {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 0.9rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-left .save-info:hover {
+    background-color: #555;
+  }
+
+}
+@media (max-width: 320px) {
+
+  .buy-now-left .save-info {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .buy-now-left .save-info:hover {
+    background-color: #555;
+  }
+
+}

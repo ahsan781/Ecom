@@ -1,0 +1,883 @@
+.category-section {
+  padding: 0px;
+  text-align: center;
+  background-color: white;
+}
+
+.category-title {
+  font-size: 3.5rem;
+  margin-bottom: 30px;
+  margin-top: 0px;
+  
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: black;
+}
+
+/* Container for the boxes */
+.category-boxes {
+  display: flex;
+  justify-content: center; /* Center the boxes */
+  gap: 10px; /* Adjust the space between the boxes */
+  padding: 0 0px; /* Optional: Add padding if needed */
+  flex-wrap: wrap; /* This will wrap boxes on smaller screens */
+}
+
+/* Each individual box */
+.category-box {
+  background-color: white;
+  padding: 2px;
+  width: 300px;
+  border-radius: 0px;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category-box:hover {
+  transform: scale(1.05); /* Slight hover effect */
+  box-shadow: black; /* Deep hover shadow */
+  border: 2px solid ;
+
+}
+
+/* Ensure the images inside the boxes are responsive */
+.category-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+}
+
+  
+  /* Text inside the box */
+  .category-text {
+    margin-top: 8px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  /* Arrow icon on the right */
+  .arrow-icon {
+    position: absolute;
+    top: 91.4%;
+    right: 20px;
+    font-size: 1.5rem;
+    color: black;
+    transform: translateY(-50%);
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .category-box:hover {
+    transform: translateY(-2px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-box:hover .arrow-icon {
+    color: #ff4b2b; /* Change arrow color on hover */
+  }
+  @media (max-width: 1080px) {
+    
+  /* Container for the section */
+.category-section {
+  padding: 40px;
+  text-align: center;
+}
+
+.category-title {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: red;
+}
+
+/* Container for the boxes */
+.category-boxes {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Each individual box */
+.category-box {
+  background-color: white;
+  padding: 2px;
+  width: 300px;           /* Set width of the category box */
+  height: 350px;          /* Set a fixed height for the category box */
+  border-radius: 0px;
+  border: 2px solid;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;       /* Hide anything overflowing from the box */
+}
+
+
+.category-image {
+  width: 100%;          /* Ensures the image stretches to the full width of its container */
+  height: 200px;        /* Fixed height for all images */
+  object-fit: cover;    /* Ensures the image fills the container without distorting, cropping if needed */
+  border-radius: 8px;   /* Optional: Adds rounded corners for a better appearance */
+}
+/* Image inside the box */
+
+/* Text inside the box */
+.category-text {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: black;
+  text-transform: uppercase;
+}
+
+/* Arrow icon on the right */
+.arrow-icon {
+  position: absolute;
+  top: 91.4%;
+  right: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+}
+
+/* Hover effects */
+.category-box:hover {
+  transform: translateY(-2px); /* Lift the box slightly on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.category-box:hover .arrow-icon {
+  color: #ff4b2b; /* Change arrow color on hover */
+}
+  }
+  @media (max-width: 1029px) {
+    
+    /* Container for the section */
+  .category-section {
+    padding: 30px;
+    text-align: center;
+  }
+  
+  .category-title {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    margin-top: 0px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: red;
+  }
+  
+  /* Container for the boxes */
+  .category-boxes {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  /* Each individual box */
+  .category-box {
+    background-color: white;
+    padding: 2px;
+    width: 300px;
+    border-radius: 0px;
+    border:2px solid;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Image inside the box */
+  .category-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0px;
+  }
+  
+  /* Text inside the box */
+  .category-text {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+  }
+  
+  /* Arrow icon on the right */
+  .arrow-icon {
+    position: absolute;
+    top: 91.4%;
+    right: 20px;
+    font-size: 1.5rem;
+    color: #333;
+    transform: translateY(-50%);
+    transition: color 0.3s ease;
+  }
+  
+  /* Hover effects */
+  .category-box:hover {
+    transform: translateY(-2px); /* Lift the box slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .category-box:hover .arrow-icon {
+    color: #ff4b2b; /* Change arrow color on hover */
+  }
+    }
+
+    @media (max-width: 1000px) {
+      .category-boxes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 10px;
+      }
+      
+    }
+
+    @media (max-width: 980px) {
+    
+      /* Container for the section */
+      .category-section {
+        padding: 60px;
+        text-align: center;
+      }
+      
+      .category-title {
+        font-size: 3rem;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        color: red;
+      }
+      
+      /* Container for the boxes */
+      .category-boxes {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0px;
+      }
+      
+      /* Each individual box */
+      .category-box {
+        background-color: white;
+        padding: 2px;
+        width: 250px;
+        border-radius: 0px;
+        border: 2px solid;
+        position: relative;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      /* Image inside the box */
+      .category-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0px;
+      }
+      
+      /* Text inside the box */
+      .category-text {
+        margin-top: 15px;
+        font-size: 1.1rem;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+      }
+      
+      /* Arrow icon on the right */
+      .arrow-icon {
+        position: absolute;
+        top: 91%;
+        right: 20px;
+        font-size: 1.5rem;
+        color: #333;
+        transform: translateY(-50%);
+        transition: color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+      }
+      
+      /* Hover effects */
+      .category-box:hover {
+        transform: translateY(-2px); /* Lift the box slightly on hover */
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
+      
+      /* Make the arrow disappear on hover */
+      .category-box:hover .arrow-icon {
+        opacity: 0; /* Make the arrow invisible on hover */
+      }
+  }
+  @media (max-width: 913px) {
+    .category-section {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 250px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  }
+  @media (max-width: 810px) {
+
+    .category-section {
+      padding: 20px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 10px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 10px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 0px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 210px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+  }
+
+
+
+  @media (max-width: 676px) {
+
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 200px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+  }
+  @media (max-width: 630px) {
+
+
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 170px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+
+  }
+  @media (max-width: 542px) {
+
+
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 160px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+
+
+  }
+  @media (max-width: 520px) {
+
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 140px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+
+
+
+
+
+  }
+  @media (max-width: 458px) {
+    
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 120px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+
+  }
+  @media (max-width: 396px) {
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 100px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+  }
+  @media (max-width: 396px) {
+    .category-section {
+      padding: 10px;
+      text-align: center;
+    }
+    
+    .category-title {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      margin-top: 0px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      color: red;
+    }
+    
+    /* Container for the boxes */
+    .category-boxes {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 3px;
+    }
+    
+    /* Each individual box */
+    .category-box {
+      background-color: white;
+      padding: 2px;
+      width: 90px;
+      border-radius: 0px;
+      border: 2px solid;
+      position: relative;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    /* Image inside the box */
+    .category-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 0px;
+    }
+    
+    /* Text inside the box */
+    .category-text {
+      margin-top: 5px;
+      margin-bottom:4px;
+      font-size: 0.7rem;
+      font-weight: bold;
+      color: black;
+      text-transform: uppercase;
+    }
+    
+    /* Arrow icon on the right */
+    .arrow-icon {
+     display:none;
+    }
+    
+    /* Hover effects */
+    .category-box:hover {
+      transform: translateY(-2px); /* Lift the box slightly on hover */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    
+    /* Make the arrow disappear on hover */
+    .category-box:hover .arrow-icon {
+      opacity: 0; /* Make the arrow invisible on hover */
+    }
+  }

@@ -1,0 +1,32 @@
+.cart-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .cart-item img {
+    width: 150px;
+    height: auto;
+  }
+  
+  .cart-item h3 {
+    font-size: 1.5rem;
+  }
+  
+  .cart-item p {
+    color: red;
+    font-weight: bold;
+  }
+  

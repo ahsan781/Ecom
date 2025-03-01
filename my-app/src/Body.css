@@ -1,0 +1,177 @@
+/* General container for the body */
+.body-container {
+  margin-top: 70px;
+}
+
+/* Carousel Styling */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Carousel images */
+.carousel-wrapper {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.carousel-image-container {
+  min-width: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Dots at the bottom for navigation */
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: red;
+}
+
+/* Styling for the rest of your sections */
+.ff {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+
+
+
+.ss {
+  font-size: 1.9rem;
+  text-align: center;
+  color: black;
+  margin: 20px;
+}
+
+/* Image Size Handling */
+.product-image {
+  width: 100%;  /* Makes sure the image takes the full width of its container */
+  height: 200px;  /* Set a fixed height for uniformity */
+  object-fit: cover;  /* Ensures images fill the container without distortion */
+  display: block;
+}
+/* Uniform image size for collection items */
+.collection-item img {
+  width: 100%;  /* Ensures all product images take full width */
+  height: 200px;  /* Set a fixed height */
+  object-fit: cover;  /* Ensures aspect ratio is maintained without stretching */
+}
+
+/* WhatsApp Icon Styling */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;  /* Adjust distance from the bottom */
+  right: 20px;   /* Adjust distance from the right side */
+  background-color: #25d366;
+  color: white;
+  border-radius: 50%;  /* Circle shape */
+  padding: 15px;
+  font-size: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+  background-color: #128c7e; /* Darker green when hovered */
+  cursor: pointer;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 1080px) {
+  .ff {
+    font-size: 1.8rem;
+  }
+
+  .ss {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 912px) {
+  .ff {
+    font-size: 1.6rem;
+  }
+  
+  .ss {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 748px) {
+  .ff {
+    font-size: 1.4rem;
+  }
+  
+  .ss {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .ff {
+    font-size: 1.2rem;
+  }
+  
+  .ss {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 530px) {
+  .ff {
+    font-size: 1rem;
+  }
+  
+  .ss {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 421px) {
+  .ff {
+    font-size: 0.8rem;
+  }
+  
+  .ss {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 343px) {
+  .ff {
+    font-size: 0.6rem;
+  }
+  
+  .ss {
+    font-size: 0.5rem;
+  }
+}
